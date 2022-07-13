@@ -7,30 +7,32 @@
     <title>Acuarela Teatro Musical - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
 </head>
 <body>
   <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png" class="d-block mx-auto"></a>
+          <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png" class="img-fluid d-block mx-auto"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-evenly p-3" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between p-2">
-              <li class="nav-item me-5">
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <ul class="navbar-nav g-0 justify-content-between p-2">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
               </li>
-              <li class="nav-item mx-5">
+              <li class="nav-item">
                 <a href="#" class="nav-link" href="#">Talleres</a>
               </li>
-              <li class="nav-item mx-5">
+              <li class="nav-item">
                 <a href="#" class="nav-link">Detrás de escena</a>
               </li>
-              <li class="nav-item mx-5">
+              <li class="nav-item">
                 <a href="#" class="nav-link">Cartelera</a>
               </li>
-              <li class="nav-item mx-5">
+              <li class="nav-item">
                 <a href="#" class="nav-link">Contacto</a>
               </li>
             </ul>
@@ -67,8 +69,101 @@
         </button>
       </div>
     </section>
+
     <!--Sección línea de tiempo-->
+    <section>
+      <div class="container-timeline">
+        <div class="timeline">
+            <div class="swiper-container swiper-container-vertical">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2013.png)" data-year="2013">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2013</span>
+                            <h4 class="timeline-title">La bella y la bestia</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2014.png)" data-year="2014">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2014</span>
+                            <h4 class="timeline-title">Frozen</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2015.png)" data-year="2015">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2015</span>
+                            <h4 class="timeline-title">Homenaje a Julie Andrews</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="timeline-title">Bella Dama-La Novicia</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 class="timeline-title">Rebelde-Mary Poppins</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2016.png)" data-year="2016">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2016</span>
+                            <h4 class="timeline-title">Matilda</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2017.png)" data-year="2017">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2017</span>
+                            <h4 class="timeline-title">Teatro Moon</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2018.png)" data-year="2018">
+                        <div class="swiper-slide-content">
+                            <span class="timeline-year">2018</span>
+                            <h4 class="timeline-title">El Gran Show de los Acuarela</h4>
+                            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2019.png)" data-year="2019">
+                      <div class="swiper-slide-content">
+                          <span class="timeline-year">2019</span>
+                          <h4 class="timeline-title">Matilda</h4>
+                          <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <h4 class="timeline-title">Dracula</h4>
+                          <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="2020">
+                      <div class="swiper-slide-content">
+                          <span class="timeline-year">2020</span>
+                          <h4 class="timeline-title">Our nice super title</h4>
+                          <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./assets/images/timeline_2021.png)" data-year="2021">
+                      <div class="swiper-slide-content">
+                          <span class="timeline-year">2021</span>
+                          <h4 class="timeline-title">Tributo a Los Miserables</h4>
+                          <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="2022">
+                      <div class="swiper-slide-content">
+                          <span class="timeline-year">2022</span>
+                          <h4 class="timeline-title">Our nice super title</h4>
+                          <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-disabled"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="https://kit.fontawesome.com/41d1e297c9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
