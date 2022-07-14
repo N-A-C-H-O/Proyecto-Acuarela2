@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
 /* 'Roboto', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* 'Acme', sans-serif; */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,9 +12,10 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
+    overflow-x: hidden;
 }
 
-/*Navbar*/
+/* Estilos barra de navegación */
 
 nav {
     background-color: #A7D251;
@@ -294,4 +299,104 @@ nav {
   .timeline .swiper-slide-content {
     right: 25%;
   }
+}
+
+/* Estilos sección contacto */
+
+#contacto {
+  margin: 6em 0;
+}
+
+#contacto h3,
+#ubicacion h3 {
+  font-size: 2.5em;
+  margin-left: 0.8em;
+}
+
+#remarque {
+  background-color: black;
+  height: 0.1em;
+  width: 6.2em;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+#contacto p,
+#ubicacion p {
+  font-size: 1.4em;
+  margin-top: 1em;
+  margin-left: 1.4em;
+}
+
+#contacto-formulario {
+  margin-top: 1em;
+}
+
+.contacto-formulario__input {
+  width: 90%;
+  margin-left: 2em;
+  padding: 0.5em;
+}
+
+textarea {
+  margin: 2em 2em 0 2em;
+  width: 95%;
+  height: 8em;
+}
+
+#div-btnEnviarDatos {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1.5em;
+}
+
+#btnEnviarDatos {
+  padding: 0.3em 7em;
+  margin-right: 4.5em;
+  border-radius: 2px;
+  text-transform: uppercase; 
+  background-color: #39D3AF;
+  border: none;
+}
+
+/* Estilos sección ubicación */
+
+#div-map {
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos footer */
+
+footer {
+  color: white;
+  margin-top: 5em;
+  background-color: #8F55A7;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-info {
+  line-height: 0.7em;
+}
+
+#footer-info,
+#footer-links {
+  padding: 2em 2em 2em 2em;
+}
+
+#footer-info h4 {
+  margin-bottom: 0.7em;
+  font-family: 'Acme';
+}
+
+#footer-links a {
+  text-decoration: none;
+  margin: 0 1.3em;
+}
+
+#footer-links a i{
+  color: white;
+  font-size: 2.5em;
 }
