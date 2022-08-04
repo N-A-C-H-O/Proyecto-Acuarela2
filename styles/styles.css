@@ -518,6 +518,35 @@ nav {
   }
 }
 
+/* Estilos detrás de escena */
+
+#backstage {
+  margin-top: 3.7em;
+}
+
+#backstage h1 {
+  margin-left: 1.6em;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+#backstage h3 {
+  margin: 2.3em 0 1.6em 2.3em;
+  font-size: 1.2em;
+}
+
+.backtage-content div {
+  margin-bottom: 1em;
+}
+
+
+.backtage-content img {
+  width: 370px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Estilos sección talleres */
 
 .section--talleres {
