@@ -48,6 +48,8 @@ nav {
     font-weight: 600;
 }
 
+/* Estilos slider */
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
     height: 2em;
     width: 2em;
@@ -515,7 +517,9 @@ nav {
     right: 25%;
   }
 }
+
 /* Estilos sección talleres */
+
 .section--talleres {
   height: 100vh;
   background: linear-gradient(121.82deg, rgba(10, 252, 212, 0.15) 11.1%, rgba(255, 83, 188, 0.15) 63.86%), #1C2A54;
@@ -569,7 +573,7 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-direction: left;
+  text-align: left;
   color: #fff;
   line-height: 2em;
 }
@@ -611,10 +615,10 @@ nav {
   clip-path: polygon(52% 0, 100% 0, 100% 100%, 40% 100%);
 }
 
-
 /* Estilos sección cartelera */
+
 .section--cartelera {
-  weight: 100%;
+  width: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../assets/images/cartelera_los_miserables.png);
   background-size: cover;
   background-repeat:no-repeat;
