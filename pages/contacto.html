@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acuarela Teatro Musical - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+</head>
+<body>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="../index.html"><img src="../assets/images/logo.png" class="img-fluid d-block mx-auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+        <ul class="navbar-nav g-0 justify-content-between p-2">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="nosotros.html">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talleres.html">Talleres</a>
+          </li>
+          <li class="nav-item">
+            <a href="backstage.html" class="nav-link">Detrás de escena</a>
+          </li>
+          <li class="nav-item">
+            <a href="cartelera.html" class="nav-link">Cartelera</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link active">Contacto</a>
+          </li>
+        </ul>
+        <button id="btnIngreso" class="btn btn-light">INGRESO</button>
+      </div>
+    </div>
+  </nav>
+  <!--Sección contacto-->
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <div id="remarque"></div>
+      <p>Escribinos tus consultas y te responderemos a la brevedad :D</p>
+      <form id="contacto-formulario">
+          <div class="row">
+              <div class="col-md-6 col-12">
+                <input type="text" class="contacto-formulario__input" placeholder="Nombre" aria-label="First name" id="nombre">
+              </div>
+              <div class="col-md-6 col-12">
+                <input type="text" class="contacto-formulario__input" placeholder="Apellido" aria-label="Last name" id="apellido">
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-6 col-12">
+                <input type="tel" class="contacto-formulario__input" placeholder="Telefono" aria-label="First name" id="nombre">
+              </div>
+              <div class="col-md-6 col-12">
+                <input type="email" class="contacto-formulario__input" placeholder="Email" aria-label="Last name" id="apellido">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <textarea placeholder="Mensaje"></textarea>
+              </div>
+            </div>
+            <div id="div-btnEnviarDatos">
+              <input id="btnEnviarDatos" type="submit" class="btn btn-primary"></input>
+            </div>
+      </form>
+  </section>
+  <!--Sección Ubicación-->
+  <section id="ubicacion">
+    <h3>Ubicación</h3>
+    <div id="remarque"></div>
+    <p>Nos podes encontrar en Tafí Viejo</p>
+    <div id="div-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7126.734109997126!2d-65.2552452021157!3d-26.732660457886315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942267ba4b08b155%3A0xf5c2baa50f221dc4!2sMunicipalidad%20de%20Taf%C3%AD%20Viejo!5e0!3m2!1ses-419!2sar!4v1657754425030!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer>
+    <div id="footer-info">
+      <h4>Acuarela-Taller de Teatro Musical</h4>
+      <p>Dirección: Gral. José de San Martín 519, T4103, Tucumán</p>
+      <p>Teléfono fijo: 381 461-7438</p>
+      <p>Whatsapp: +54 381 300-8840</p>
+    </div>
+    <div id="footer-links">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script src="https://kit.fontawesome.com/41d1e297c9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
