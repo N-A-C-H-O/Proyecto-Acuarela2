@@ -48,6 +48,13 @@ nav {
     font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+      width: 25%;
+  }
+}
+
+
 /* Estilos slider */
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
