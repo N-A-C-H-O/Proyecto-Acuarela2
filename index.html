@@ -53,12 +53,12 @@
     </div>
   </nav>
   <!--Sección Slider-->
-  <section>
+  <section id="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" id="indicadorSlider3" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -79,12 +79,11 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="carousel-item__2">
             <div class="carousel--img"></div>
             <div class="carousel--diagonal"></div>
             <div class="carousel--text">
-                <!--<img src="assets/images/fondo2.jpg" class="d-block w-100" alt="fondo2">-->
                 <h2>Talleres</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
                 <div class="container__carousel">
@@ -93,7 +92,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carousel-item__3">
           <img src="assets/images/fondo3.jpg" class="d-block w-100" style="height: 85vh" alt="fondo3">
         </div>
       </div>
@@ -106,6 +105,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </section>
+  <!--Sección imagen cartelera-->
+  <section id="presentacion">
+    <img src="assets/images/fondo3.jpg" class="d-block w-100" style="height: 85vh" alt="fondo3">
   </section>
   <!--Footer-->
   <footer>
