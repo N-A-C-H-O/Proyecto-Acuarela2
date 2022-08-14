@@ -845,7 +845,6 @@ nav {
 }
 
 .backtage-content img {
-  width: 370px;
   height: 300px;
   display: block;
   margin: 0 auto;
@@ -890,6 +889,90 @@ nav {
   margin: 1.6em auto 0 auto;
   background-color: #8F55A7;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .backstage_card {
+    width: 93%;
+    height: 20em;
+  }
+  
+  .backstage_card .card-body {
+    border-radius: 0 0 20px 20px;
+    overflow-y: hidden;
+    color: white;
+    
+  }
+  
+  .backstage_card .card-text {
+    font-size: 0.8em;
+  }
+  
+  .backstage_card .btn {
+    width: 90%;
+    margin: 1.5em auto 0 auto;
+    padding: 0.5em 0.2em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  
+  .backtage-content div {
+    margin-bottom: 2em;
+  }
+  
+  .backtage-content img {
+    width: 320px;
+  }
+
+  .backstage_card {
+    width: 93%;
+    height: 22em;
+  }
+  
+  .backstage_card .card-text {
+    font-size: 0.8em;
+  }
+  
+  .backstage_card .btn {
+    width: 90%;
+    margin: 1.5em auto 0 auto;
+    padding: 0.5em 0.2em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  
+  .backtage-content img {
+    width: 350px;
+  }
+
+  .backstage_card {
+    width: 95%;
+  }
+  
+  .backstage_card .btn {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .backtage-content img {
+    width: 310px;
+  }
+  
+  .backstage_card {
+    width: 80%;
+    height: 21em;
+  }
+
+  .backstage_card .btn {
+    width: 40%;
+  }
 }
 
 
