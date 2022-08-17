@@ -57,10 +57,6 @@ nav {
 
 /* Estilos slider */
 
-#presentacion {
-  margin-bottom: -4em;
-}
-
 .carousel-control-prev-icon, .carousel-control-next-icon {
     height: 2em;
     width: 2em;
@@ -118,12 +114,9 @@ nav {
 
 .carousel-item__1 h2{
   position: absolute;
-  /* left: 10%;
-  top: 15%; */
   font-family: 'Acme';
   font-style: normal;
   font-weight: 400;
-  /* font-size: 5em; */
   line-height: 82%;
   text-transform: uppercase;
   background: linear-gradient(90deg, #8F55A7 2.57%, #FFBC2B 33.08%, #39D3AF 57.28%);
@@ -135,15 +128,10 @@ nav {
 
 .carousel-item__1 p {
   position: absolute;
-  /* width: 40%;
-  left: 11%;
-  top: 50%; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  /* font-size: 1.5em; */
   line-height: 100%;
-  /* text-align: center; */
   color: #FFFFFF;
 }
 
@@ -244,34 +232,18 @@ nav {
 
 .img1_1 {
   position: absolute;
-  /* width: 7em;
-  height: 7em;
-  right: 10%;
-  top: 5%; */
 }
 
 .img1_2 {
   position: absolute;
-  /* width: 10em;
-  height: 10em;
-  right: 25%;
-  top: 25%; */  
 }
 
 .img1_3 {
   position: absolute;
-  /* width: 10em;
-  height: 9em;
-  right: 15%;
-  top: 65%; */
 }
 
 .img1_4 {
   position: absolute;
-  /* width: 8em;
-  height: 8em;
-  right: 5%;
-  top: 45%; */
 }
 
 .carousel--img {
@@ -280,7 +252,6 @@ nav {
   clip-path: polygon(50% 0, 0 0, 0 100%, 38% 100%);
   background:url(../assets/images/img2_1.png);
   background-size: 100% 100%;
-  /* background-size: auto; */
   background-repeat:no-repeat;
 }
 .carousel--text {
@@ -293,18 +264,120 @@ nav {
 
 .carousel--diagonal{
   background-color: #8F55A7;
-  /* clip-path: polygon(50% 0, 52% 0, 40% 100%, 38% 100%); */
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
 }
 
-@media screen and (max-width: 768px) {
+.carousel-item__3 {
+  background-image: url('../assets/images/fondo-prueba.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
 
-  .carousel-item__3 {
-    visibility: hidden;
-  }
+.carousel-item__3 h2 {
+  position: absolute;
+  font-family: 'Acme';
+  font-style: normal;
+  font-size: 2.6em;
+  font-weight: 400;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: white;
+  width: 45%;
+  height: 50%;
+  left: 9%;
+  top: 15%;
+}
+
+.carousel-item__3 p {
+  position: absolute;
+  width: 45%;
+  height: 50%;
+  left: 9%;
+  top: 35%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 100%;
+  color: white;
+
+}
+
+.carousel-item__3 .container__carousel {
+  left: 1%;
+  top: 50%;
+}
+
+#presentacion {
+  width: 100%;
+  height: 260px;
+  margin-bottom: -4em;
+  background-image: url('../assets/images/fondo-prueba.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#presentacion h2 {
+  position: absolute;
+  font-family: 'Acme';
+  font-style: normal;
+  font-size: 1.7em;
+  font-weight: 400;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: white;
+  width: 45%;
+  left: 9%;
+  top: 20%;
+}
+
+#presentacion p {
+  position: absolute;
+  width: 45%;
+  height: 50%;
+  left: 9%;
+  top: 45%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 100%;
+  color: white;
+}
+
+.container__presentacion {
+  position: absolute;
+  right: 0px;
+  bottom: 10%;
+  width: 50%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container__presentacion a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  position: absolute;
+  background: #39D3AF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.6em;
+  line-height: 28px;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 768px) {
 
   #indicadorSlider3 {
     display: none;
@@ -355,6 +428,11 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+
+  #presentacion {
+    height: 450px;
+  }
+
   .carousel-item__1 h2 {
     top: 55%;
     left: 51%;
@@ -403,10 +481,6 @@ nav {
     margin-bottom: -4em;
   }
 
-  .carousel-item__3 {
-    visibility: visible;
-  }
-
   #indicadorSlider3 {
     display: inline;
   }
@@ -416,13 +490,11 @@ nav {
   }
 
   .carousel-item__1 h2 {
-    /* font-size: 4em; */
     top: 25%;
     left: 18%;
   }
 
   .carousel-item__1 p {
-    /* font-size: 1.2em; */
     top: 45%;
     left: 15%;
     width: 40%;
@@ -845,7 +917,8 @@ nav {
 }
 
 .backtage-content img {
-  height: 300px;
+  width: 350px;
+  height: 263px;
   display: block;
   margin: 0 auto;
 }
@@ -923,9 +996,9 @@ nav {
     margin-bottom: 2em;
   }
   
-  .backtage-content img {
+  /* .backtage-content img {
     width: 320px;
-  }
+  } */
 
   .backstage_card {
     width: 93%;
@@ -946,10 +1019,6 @@ nav {
 
 @media screen and (min-width: 700px) {
   
-  .backtage-content img {
-    width: 350px;
-  }
-
   .backstage_card {
     width: 95%;
   }
@@ -960,10 +1029,6 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-
-  .backtage-content img {
-    width: 310px;
-  }
   
   .backstage_card {
     width: 80%;
@@ -1164,6 +1229,8 @@ textarea {
   border-radius: 2px;
   text-transform: uppercase; 
   background-color: #39D3AF;
+  color: black;
+  font-weight: bold;
   border: none;
 }
 
@@ -1231,6 +1298,12 @@ textarea {
   
   #btnEnviarDatos {
     padding: 0.4em 7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  textarea {
+    margin-top: 3px;
   }
 }
 
