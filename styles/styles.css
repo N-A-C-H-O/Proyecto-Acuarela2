@@ -271,8 +271,9 @@ nav {
 }
 
 .carousel-item__3 {
-  background-image: url('../assets/images/fondo-prueba.jpg');
+  background-image: linear-gradient(380deg, rgba(0, 0, 0, 0.8) -0.93%, rgba(41, 41, 41, 0.9) 100%, rgba(79, 79, 79, 0.6) 68.34%, rgba(217, 217, 217, 0) 99.07%), url(../assets/images/fondo3.jpg);
   background-size: cover;
+  opacity: 0.9;
   background-repeat: no-repeat;
   height: 85vh;
 }
@@ -316,7 +317,8 @@ nav {
   width: 100%;
   height: 260px;
   margin-bottom: -4em;
-  background-image: url('../assets/images/fondo-prueba.jpg');
+  background-image: linear-gradient(380deg, rgba(0, 0, 0, 0.8) -0.93%, rgba(41, 41, 41, 0.9) 100%, rgba(79, 79, 79, 0.6) 68.34%, rgba(217, 217, 217, 0) 99.07%), url(../assets/images/fondo3.jpg);
+  opacity: 0.9;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -938,7 +940,7 @@ nav {
 .backstage_card {
   margin: 0 auto;
   width: 65%;
-  height: 17em;
+  height: 22em !important;
   margin-bottom: 3em;
   border-radius: 20px;
   background-repeat: no-repeat;
@@ -948,7 +950,7 @@ nav {
 
 .backstage_card .card-body {
   background-color: rgba(17, 17, 17, 0.9);
-  margin-top: 7em;
+  margin-top: 11em;
   border-radius: 0 0 20px 20px;
   overflow-y: hidden;
   color: white; 
@@ -959,7 +961,8 @@ nav {
 }
 
 .backstage_card .card-text {
-  font-size: 0.6em;
+  font-size: 0.7em !important;
+  height: 7em;
 }
 
 .backstage_card .card-title {
@@ -970,7 +973,6 @@ nav {
 .backstage_card .btn {
   display: block;
   width: 20%;
-  margin: 1.6em auto 0 auto;
   background-color: #8F55A7;
   border: none;
 }
@@ -979,7 +981,7 @@ nav {
   
   .backstage_card {
     width: 93%;
-    height: 20em;
+    height: 23em !important;
   }
   
   .backstage_card .card-body {
@@ -1006,14 +1008,9 @@ nav {
   .backtage-content div {
     margin-bottom: 2em;
   }
-  
-  /* .backtage-content img {
-    width: 320px;
-  } */
 
   .backstage_card {
     width: 93%;
-    height: 22em;
   }
   
   .backstage_card .card-text {
@@ -1043,14 +1040,12 @@ nav {
   
   .backstage_card {
     width: 80%;
-    height: 21em;
   }
 
   .backstage_card .btn {
     width: 40%;
   }
 }
-
 
 /* Estilos sección talleres */
 
@@ -1160,12 +1155,16 @@ nav {
 
 /* Estilos sección cartelera */
 
+#cartelera {
+  margin-bottom: -4em;
+}
+
 .section--cartelera {
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../assets/images/cartelera_los_miserables.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../assets/images/fondo3.jpg);
   background-size: cover;
   background-repeat:no-repeat;
-  color: #FFBC2B;
+  color: white;
   padding: 1em;
 }
 
@@ -1180,7 +1179,11 @@ nav {
   flex-direction: row;
   margin: 1em;
   align-items: flex-start;
-  justify-content: space-between;
+}
+
+.section--cartelera-description__contenedor1 {
+  margin-left: -1em;
+  margin-right: 10em;
 }
 
 .section--cartelera-description h3 {
