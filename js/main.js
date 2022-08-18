@@ -1,29 +1,29 @@
 
-var timelineSwiper = new Swiper('.timeline .swiper-container', {
-    direction: 'vertical',
-    loop: false,
+const swiper = new Swiper('.swiper', {
+    direction: "horizontal",
     speed: 1600,
-    pagination: '.swiper-pagination',
-    paginationBulletRender: function (swiper, index, className) {
-      var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-      return '<span class="' + className + '">' + year + '</span>';
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        let year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+        return '<span class="' + className + '">' + year + "</span>";
+      },
     },
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       768: {
-        direction: 'horizontal' } } });
-  //# sourceURL=pen.js
+        direction: 'vertical' } } });
 
-var ViewportHeight = window.innerHeight;
+let ViewportHeight = window.innerHeight;
+let header = document.querySelector('.navbar');
+let headerHeight = header.offsetHeight;
+
 const allSwiper = document.querySelectorAll('.swiper-slide');
 allSwiper.forEach(el => {
-    el.style.height = `${ViewportHeight}px`;
+    el.style.height = `${ViewportHeight - headerHeight}px`;
 })
-
-const sliderItem3 = document.querySelector('.carousel-item__3');
-
-if (innerWidth >= 320 && innerWidth < 1024) {
-  sliderItem3.remove()
-}
