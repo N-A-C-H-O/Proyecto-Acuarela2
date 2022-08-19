@@ -270,6 +270,10 @@ nav {
   top: 0;
 }
 
+.img2_1 {
+  display: none;
+}
+
 .carousel-item__3 {
   background-image: linear-gradient(380deg, rgba(0, 0, 0, 0.8) -0.93%, rgba(41, 41, 41, 0.9) 100%, rgba(79, 79, 79, 0.6) 68.34%, rgba(217, 217, 217, 0) 99.07%), url(../assets/images/fondo3.jpg);
   background-size: cover;
@@ -316,7 +320,6 @@ nav {
 #presentacion {
   width: 100%;
   height: 260px;
-  margin-bottom: -4em;
   background-image: linear-gradient(380deg, rgba(0, 0, 0, 0.8) -0.93%, rgba(41, 41, 41, 0.9) 100%, rgba(79, 79, 79, 0.6) 68.34%, rgba(217, 217, 217, 0) 99.07%), url(../assets/images/fondo3.jpg);
   opacity: 0.9;
   background-size: cover;
@@ -385,20 +388,22 @@ nav {
     display: none;
   }
 
+  .carousel-item__1, .carousel-item__2 {
+    height: 60vh;
+  }
   .carousel-item__1 h2 {
     font-size: 2.5em;
-    top: 55%;
-    left: 40%;
+    top: 60%;
+    left: 45%;
   }
 
   .carousel-item__1 p {
     font-size: 1em;
-    top: 62%;
+    top: 70%;
     left: 15%;
     text-align: right;
     width: 80%;
   }
-
 
   .img1_1 {
     width: 5em;
@@ -410,22 +415,39 @@ nav {
   .img1_2 {
     width: 8em;
     height: 8em;
-    right: 55%;
+    right: 60%;
     top: 15%;  
   }
   
   .img1_3 {
-    width: 7em;
+    width: 6em;
     height: 6em;
-    right: 40%;
-    top: 32%;
+    right: 53%;
+    top: 42%;
   }
   
   .img1_4 {
     width: 6em;
     height: 6em;
-    right: 20%;
-    top: 20%;
+    right: 30%;
+    top: 25%;
+  }
+
+  .carousel--img, .carousel--diagonal {
+    display: none;
+  }
+
+  .carousel--text {
+    clip-path: none;
+  }
+
+  .img2_1 {
+    display: block;
+  }
+  
+  .carousel-item__2 h2 {
+    right: 5%;
+    top: 15%;
   }
 }
 
@@ -543,7 +565,7 @@ nav {
 
   
   .img1_3 {
-    top: 60%;
+    top: 65%;
   }
   
   .img1_4 {
@@ -556,19 +578,25 @@ nav {
 @media screen and (min-width: 320px) {
 
   .carousel-item__2 h2 {
-    right: 10%;
-    top: 32%;  
+    right: 5%;
+    top: 15%;  
     font-size: 1.8em;
   }
   
   .carousel-item__2 p {
-    width: 40%;
-    height: 50%;
-    right: 7%;
-    top: 40%;
-    font-size: 1em;
-    text-align: center;
-  
+    width: 90%;
+    right: 5%;
+    top: 25%;
+    font-size: 0.9em;
+    text-align: right;
+    line-height: 120%;
+  }
+
+  .carousel-item__2 p span {
+    display: block;
+    position: relative;
+    left: 45%;
+    width: 55%;
   }
 
   .carousel--img {
@@ -592,6 +620,9 @@ nav {
     font-size: 0.8em;
   }
 
+  .container__carousel{
+    bottom: 15%;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -648,18 +679,29 @@ nav {
 
   .carousel-item__2 h2 {
     right: 13%;
-    top: 32%;  
+    top: 15%;  
     font-size: 3em;
   }
   
   .carousel-item__2 p {
-    top: 50%;
+    top: 30%;
+    right: 10%;
+  }
+
+  .carousel-item__2 p span {
+    display: block;
+    position: relative;
+    left: 0%;
+    width: 100%;
   }
 
   .carousel--img {
     background-size: auto;
   }
   
+  .container__carousel{
+    bottom: 10%;
+  }
 }
 
 /* Estilos de sección sobre nosotros */
@@ -1050,12 +1092,16 @@ nav {
 /* Estilos sección talleres */
 
 .section--talleres {
-  height: 100vh;
+  height: 85vh;
   background: linear-gradient(121.82deg, rgba(10, 252, 212, 0.15) 11.1%, rgba(255, 83, 188, 0.15) 63.86%), #1C2A54;
   width: 100%;
   position: relative;
   top: 0;
   left: 0;
+  border-bottom: #39D3AF solid 25px;
+}
+.section--talleres_2 {
+  background: linear-gradient(107.72deg, rgba(10, 252, 212, 0.15) 7.02%, rgba(255, 83, 188, 0.15) 40.4%), #1C2A54;
 }
 
 .section--talleres h2 {
@@ -1077,6 +1123,9 @@ nav {
   background-clip: text;
   mix-blend-mode: exclusion;
 }
+.section--talleres_2 h2 {
+  left: 5%;
+}
 
 .section--talleres p {
   position: absolute;
@@ -1093,23 +1142,23 @@ nav {
   color: #FFFFFF;
 }
 
-.section--talleres ul {
-  position: absolute;
-  width: 45%;
-  height: 30%;
-  right: 5%;
-  top: 60%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.section--talleres_2 p {
+  left: 5%;
   text-align: left;
-  color: #fff;
-  line-height: 2em;
 }
 
 .talleres--diagonal{
   background-color: #39D3AF;
   clip-path: polygon(50% 0, 52% 0, 40% 100%, 38% 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.talleres--diagonal2{
+  background-color: #39D3AF;
+  clip-path: polygon(48% 0, 50% 0, 62% 100%, 60% 100%);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1131,11 +1180,24 @@ nav {
   width: 100%;
   height: 100%;
   clip-path: polygon(50% 0, 0 0, 0 100%, 38% 100%);
-  background:url(../assets/images/taller1.png);
+  background:url(../assets/images/img_talleres1.png);
   background-size: 100% 100%;
   background-size: auto;
   background-repeat:no-repeat;
 }
+
+.talleres--img2 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 62% 100%);
+  background:url(../assets/images/img_talleres2.png);
+  background-size: 100% 100%;
+  background-size: auto;
+  background-repeat:no-repeat;
+}
+
 .talleres--text {
   position: absolute;
   top: 0;
@@ -1144,23 +1206,58 @@ nav {
   clip-path: polygon(52% 0, 100% 0, 100% 100%, 40% 100%);
 }
 
+.talleres--text2 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(48% 0, 0 0, 0 100%, 60% 100%);
+}
+
 @media screen and (max-width: 700px) {
+  .talleres--text {
+    position: relative; 
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .talleres--text h2 {
-    width: 40%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: relative;
+    display: block;
   }
   .talleres--text p {
-    top: 30%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: relative;
+  }
+
+  .talleres--img {
+    clip-path: none;
+    background:url(../assets/images/img_talleres_mobile.png);
+    height: 40%;
+  }
+  .talleres--diagonal, .talleres--diagonal--borde {
+    display: none;
+  }
+  .section--talleres {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 /* Estilos sección cartelera */
 
-#cartelera {
-  margin-bottom: -4em;
-}
 
 .section--cartelera {
   width: 100%;
+  height: 85vh;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../assets/images/fondo3.jpg);
   background-size: cover;
   background-repeat:no-repeat;
@@ -1273,7 +1370,7 @@ textarea {
 /* Estilos sección ubicación */
 
 #div-map {
-  margin-top: 6em;
+  margin: 4em 0;
   display: flex;
   justify-content: center;
 }
@@ -1358,7 +1455,6 @@ textarea {
 
 footer {
   color: white;
-  //margin-top: 4em;
   background-color: #8F55A7;
   display: flex;
   justify-content: space-between;
