@@ -1499,7 +1499,7 @@ footer {
 @media screen and (min-width: 320px) {
 
   #footer-info {
-    line-height: 0.5em;
+    line-height: 0.6em;
   }
 
   #footer-links {
@@ -1509,11 +1509,11 @@ footer {
   
   #footer-info,
   #footer-links {
-    padding: 0.5em;
+    padding: 0.3em;
   }
   
   #footer-info h4 {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   #footer-info p {
@@ -1521,12 +1521,13 @@ footer {
   }
 
   .footer-info__responsive-text {
-    font-size: 0.6em;
+    font-size: 0.8em;
+    line-height: 1.6em;
   }
   
   #footer-links a {
     font-size: 0.6em;
-    margin: 0 1em;
+    margin: 0 0.9em;
   }
   
 }
